@@ -185,12 +185,12 @@ header {
   border-radius: 8px;
   text-align: center;
 
-  max-height: 85vh;     /* 🔥 IMPORTANTE */
+  max-height: 65vh;     /* 🔥 IMPORTANTE */
   overflow-y: auto;     /* 🔥 IMPORTANTE */
 }
 
 .modal-content img {
-  width: 100%;
+  width: 80%;
   max-height: 50vh;     /* usa a altura da tela */
   object-fit: contain; /* MOSTRA A IMAGEM INTEIRA */
   border-radius: 10px;
