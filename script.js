@@ -3,7 +3,7 @@ const itens = [
   
   {
     nome: "IPHONE 12",
-    preco: "18 000.00MZN",
+    preco: "18000 MZN",
     estado:"USADO-EM BOM ESTADO",
     img: "img/iphone12.jpg",
     descricao: "128GB, FACE ID OFF, BATERIA 80%, SEM RACHA, FORA DA CAIXA",
@@ -11,7 +11,7 @@ const itens = [
   },
   {
   nome: "IPHONE X",
-  preco: "7 000MZN",
+  preco: "7000 MZN",
   estado:"USADO-EM BOM ESTADO",
   img: "img/iphonex.jpg", 
   descricao: "256GB, BOA BATERIA, FACE ID OFF, AS VEZES DESLIGA AO EFECTUAR UMA CHAMADA :)",
