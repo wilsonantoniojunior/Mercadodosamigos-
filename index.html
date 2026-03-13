@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado dos Amigos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topo">
+    <div class="logo-area">
+      <img src="logo.png" alt="Wilson Junior Logo">
+      <img src="logo2.png" alt="Mercado dos Amigos">
+      <div>
+        <h1>Mercado dos Amigos</h1>
+        <p class="slogan">Conectando pessoas, vendendo com confiança.</p>
+      </div>
+    </div>
+    <div class="butao12">
+      <button onclick="abrircontacto()">Contacte-nos</button>
+      <button onclick="abrirvenda()">Vender aqui</button>
+    </div>
+  </header>
+
+  <!-- CATEGORIAS -->
+  <div class="categorias">
+    <button onclick="filtrarCategoria('Livros')">📚 Livros</button>
+    <button onclick="filtrarCategoria('Eletrônicos')">📱 Eletrônicos</button>
+    <button onclick="filtrarCategoria('Serviços')">💻 Serviços</button>
+    <button onclick="filtrarCategoria('Roupas')">👕 Roupas</button>
+    <button onclick="filtrarCategoria('jogos')">👕 Jogos</button>
+  </div>
+
+  <!-- CATÁLOGO -->
+  <section id="catalogo"></section>
+
+  <!-- MODAL DETALHES -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <img id="modal-img" alt="Produto">
+      <h2 id="modal-nome"></h2>
+      <p id="modal-estado"></p>
+      <p id="modal-preco"></p>
+      <p id="modal-descricao"></p>
+      <button id="btn-comprar">Comprar no WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- MODAL IMAGEM -->
+  <div id="modalImagem" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharImagem()">&times;</span>
+      <img id="imgGrande" alt="Imagem Grande">
+    </div>
+  </div>
+
+  <!-- MODAL CONTACTO -->
+  <div id="modalcontacto" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharcontacto()">&times;</span>
+      <h2>Contacte-nos</h2>
+      <p>📍 Maputo – Moçambique</p>
+      <p>📞 +258 84 501 6462</p>
+      <p>📧 mercadodosamigos@gmail.com</p>
+      <p>💬 Use o chat para resposta rápida</p>
+    </div>
+  </div>
+
+  <!-- MODAL VENDA -->
+  <div id="modalvenda" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharvenda()">&times;</span>
+      <h2>Venda Conosco</h2>
+      <p>Envie as especificações do seu produto para o nosso email:</p>
+      <p>wilsonantoniosauljunior@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <div class="f">Criado por</div>
+  <div class="logowasj">
+    <img src="logowasj.png" alt="WASJ Company">
+  </div>
+  <div class="tc">
+    <a href="tc.html">Termos e condições</a>
+  </div>
+
+</body>
+</html>
