@@ -1,1 +1,13 @@
+.pesquisa{
+  text-align:center;
+  margin:10px;
+}
 
+.pesquisa input{
+  width:90%;
+  max-width:400px;
+  padding:10px;
+  border-radius:20px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
