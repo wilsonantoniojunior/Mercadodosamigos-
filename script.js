@@ -83,7 +83,7 @@ function renderizar(itensRender){
   });
 }
 
-renderizar(itens);
+
 
 // Filtrar categoria
 function filtrarCategoria(categoria){
@@ -135,3 +135,16 @@ window.onclick = function(event){
     if(event.target === m) m.style.display="none";
   });
 };
+function pesquisarProduto(){
+
+  const texto = document
+    .getElementById("barraPesquisa")
+    .value
+    .toLowerCase();
+
+  const resultados = itens.filter(item =>
+    item.nome.toLowerCase().includes(texto)
+  );
+
+  renderizar(resultados);
+  }
