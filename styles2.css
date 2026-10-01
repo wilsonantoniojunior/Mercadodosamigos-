@@ -1,0 +1,104 @@
+.pesquisa{
+  text-align:center;
+  margin:10px;
+}
+
+.pesquisa input{
+  width:90%;
+  max-width:400px;
+  padding:10px;
+  border-radius:20px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
+
+
+.boasvindas{
+  text-align:center;
+  padding:20px;
+  max-width:800px;
+  margin:auto;
+}
+
+.boasvindas h2{
+  color:#0a58ca;
+}
+
+.boasvindas p{
+  margin:8px 0;
+}
+
+.menu-principal{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin:20px;
+}
+
+.btn-menu{
+  background:#0a58ca;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.btn-menu:hover{
+  opacity:0.9;
+}
+
+
+
+
+
+.catalogo{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:15px;
+  padding:15px;
+}
+
+
+.menu-categorias {
+  text-align: center;
+  margin: 15px;
+}
+
+.menu-categorias button {
+  background: #0a58ca;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-categorias button:hover {
+  opacity: 0.9;
+}
+
+.categorias {
+  text-align: center;
+  margin: 10px 15px;
+}
+
+.categorias button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.mdagif img {
+  width:150px;
+  display: block;
+  margin: auto;
+  border-radius: : 6px;
+}

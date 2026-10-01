@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>LOCAL MDA</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
+  <script src="script.js" defer></script>
+  <script src="produtos.js" defer></script>
+</head>
+
+
+
+<body>
+  
+  
+<!-- BOTÃO CATEGORIAS -->
+<div class="menu-categorias">
+  <button onclick="mostrarCategorias()">
+    🛍️ PRODUTOS LOCAIS
+  </button>
+</div>
+
+<!-- CATEGORIAS OCULTAS -->
+<div id="categorias" style="display:none;">
+  <div class="categorias">
+    <button onclick="filtrarCategoria('Livros')">📚 LIVROS</button>
+    <button onclick="filtrarCategoria('Eletrônicos')">📱 ELETRÔNICOS</button>
+    <button onclick="filtrarCategoria('Serviços')">💻 SERVIÇOS</button>
+    <button onclick="filtrarCategoria('Roupas')">👕 ROUPAS</button>
+    <button onclick="filtrarCategoria('Jogos')">🎮 JOGOS</button>
+    <button onclick="filtrarCategoria('Perfumes')">👃 PERFUMES</button>
+      <button onclick="filtrarCategoria('tester')">👃 tester</button>
+  </div>
+</div>
+<section id="catalogo"></section>
+
+   <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <img id="modal-img" alt="Produto">
+      <h2 id="modal-nome"></h2>
+      <p id="modal-estado"></p>
+      <p id="modal-preco"></p>
+      <p id="modal-descricao"></p>
+      <button id="btn-comprar">Comprar no WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- MODAL IMAGEM -->
+  <div id="modalImagem" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharImagem()">&times;</span>
+      <img id="imgGrande" alt="Imagem Grande">
+    </div>
+  </div>
+
+  <div class="boasvindas"> <a href="  index.html"
+  <button>  PAGINA INICIAL ↩️</button> </a></div>
+  
+  
+    <div class="pesquisa">
+  <input 
+    type="text" 
+    id="barraPesquisa" 
+    placeholder="🔍 Procurar produto..." 
+    onkeyup="pesquisarProduto()"
+  >
+  </div>
+  
+  <div class="mdagif">
+  <img src="mda.gif" alt=" log">
+    </div>
+  
+    
+    
+</body>
+</html>
